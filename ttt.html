@@ -1,0 +1,247 @@
+<html>
+    <head>
+        <style>
+            .abc
+            {
+                background-color: aqua;
+                color: darkred;
+            }
+            .zx
+            {
+                background-color: rgba(10, 22, 37, 0.308);
+                color: rgb(10, 49, 134);
+            }
+            img.background
+            {
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+
+            }
+        </style>
+    </head>
+    <form>
+        <center>
+        <H1 class="abc"><b><i>Tic Tac Toe Game</i></b></H1>
+        <marquee direction=”left or right or up or down”> <p class="zx" style="font-size: 40px;"><b> Player 1 will start with "X" Player 2 with "0"</b></p></marquee>
+        <br>
+        <br>
+        <br>
+        <input style="background-color: rgb(180, 230, 230); font-size: larger;"  type="text"  id="a" onclick="fun1();logic()">
+        <input style="background-color: rgb(180, 230, 230); font-size: larger" type="text" id="b" onclick="fun2();logic()">
+        <input style="background-color: rgb(180, 230, 230); font-size: larger" type="text" id="c" onclick="fun3();logic()">
+        <br>
+        <input style="background-color: rgb(180, 230, 230); font-size: larger" type="text" id="d" onclick="fun4();logic()">
+        <input style="background-color: rgb(180, 230, 230); font-size: larger"type="text" id="e" onclick="fun5();logic()">
+        <input style="background-color: rgb(180, 230, 230); font-size: larger" type="text" id="f" onclick="fun6();logic()">
+        <br>
+        <input style="background-color: rgb(180, 230, 230); font-size: larger" type="text" id="g" onclick="fun7();logic()">
+        <input  style="background-color: rgb(180, 230, 230); font-size: larger"type="text" id="h" onclick="fun8();logic()">
+        <input style="background-color: rgb(180, 230, 230); font-size: larger"type="text" id="i" onclick="fun9();logic()">
+    </center>
+    </form>
+    <script>
+        count=1;
+        function fun1()
+        {
+            if(count==1)
+            {
+                document.getElementById("a").value="x";
+                count=0;
+            }
+            else
+            {
+                document.getElementById("a").value="0";
+                count=1;
+            }
+        }
+        function fun2()
+        {
+            if(count==1)
+            {
+                document.getElementById("b").value="x";
+                count=0;
+            }
+            else
+            {
+                document.getElementById("b").value="0";
+                count=1;
+            }
+        }
+        function fun3()
+        {
+            if(count==1)
+            {
+                document.getElementById("c").value="x";
+                count=0;
+            }
+            else
+            {
+                document.getElementById("c").value="0";
+                count=1;
+            }
+        }
+        function fun4()
+        {
+            if(count==1)
+            {
+                document.getElementById("d").value="x";
+                count=0;
+            }
+            else
+            {
+                document.getElementById("d").value="0";
+                count=1;
+            }
+        }
+        function fun5()
+        {
+            if(count==1)
+            {
+                document.getElementById("e").value="x";
+                count=0;
+            }
+            else
+            {
+                document.getElementById("e").value="0";
+                count=1;
+            }
+        }
+        function fun6()
+        {
+            if(count==1)
+            {
+                document.getElementById("f").value="x";
+                count=0;
+            }
+            else
+            {
+                document.getElementById("f").value="0";
+                count=1;
+            }
+        }
+        function fun7()
+        {
+            if(count==1)
+            {
+                document.getElementById("g").value="x";
+                count=0;
+            }
+            else
+            {
+                document.getElementById("g").value="0";
+                count=1;
+            }
+        }
+        function fun8()
+        {
+            if(count==1)
+            {
+                document.getElementById("h").value="x";
+                count=0;
+            }
+            else
+            {
+                document.getElementById("h").value="0";
+                count=1;
+            }
+        }
+        function fun9()
+        {
+            if(count==1)
+            {
+                document.getElementById("i").value="x";
+                count=0;
+            }
+            else
+            {
+                document.getElementById("i").value="0";
+                count=1;
+            }
+        }
+        function logic()
+        {
+         ele1=document.getElementById("a").value;
+         ele2=document.getElementById("b").value;
+         ele3=document.getElementById("c").value;
+         ele4=document.getElementById("d").value;
+         ele5=document.getElementById("e").value;
+         ele6=document.getElementById("f").value;
+         ele7=document.getElementById("g").value;
+         ele8=document.getElementById("h").value;
+         ele9=document.getElementById("i").value;
+
+        
+        if(ele1=="x" && ele2=="x" && ele3=="x")
+        {
+            alert("X WON...!");
+        }
+        else if(ele1=="0" && ele2=="0" && ele3=="0")
+        {
+            alert("0 WON...!");
+        }
+        else if(ele1=="x" && ele5=="x" && ele9=="x")
+        {
+            alert("X WON...!");
+        }
+        else if(ele1=="0" && ele5=="0" && ele9=="0")
+        {
+            alert("0 WON...!");
+        }
+        else if(ele1=="x" && ele4=="x" && ele7=="x")
+        {
+            alert("X WON...!");
+        }
+        else if(ele1=="0" && ele4=="0" && ele7=="0")
+        {
+            alert("0 WON...!");
+        }
+        else if(ele3=="x" && ele6=="x" && ele9=="x")
+        {
+            alert("X WON...!");
+        }
+        else if(ele3=="0" && ele6=="0" && ele9=="0")
+        {
+            alert("0 WON...!");
+        }
+        else if(ele4=="x" && ele5=="x" && ele6=="x")
+        {
+            alert("X WON...!");
+        }
+        else if(ele4=="0" && ele5=="0" && ele6=="0")
+        {
+            alert("0 WON...!");
+        }
+        else if(ele7=="x" && ele8=="x" && ele9=="x")
+        {
+            alert("X WON...!");
+        }
+        else if(ele7=="0" && ele8=="0" && ele9=="0")
+        {
+            alert("0 WON...!");
+        }
+        else if(ele3=="x" && ele5=="x" && ele7=="x")
+        {
+            alert("X WON...!");
+        }
+        else if(ele3=="0" && ele5=="0" && ele7=="0")
+        {
+            alert("0 WON...!");
+        }
+        else if(ele2=="x" && ele5=="x" && ele8=="x")
+        {
+            alert("X WON...!");
+        }
+        else if(ele2=="0" && ele5=="0" && ele8=="0")
+        {
+            alert("0 WON...!");
+        }
+    }
+    </script>
+    <body>
+        <img class="background" src="C:\Users\Snehitha\Desktop\tic-tac-toe.jpg" alt="Aleq">
+    </body>
+</html>
